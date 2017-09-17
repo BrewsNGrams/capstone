@@ -169,7 +169,7 @@ figcaption {
   }
 
   .main-column {
-    width: 100%;
+    width: auto;
   }
 
   section {
