@@ -210,4 +210,12 @@ figcaption {
   .large-graphic :first-child {
     width: 100%;
   }
+
+  .catalogue .main-column {
+    align-items: stretch;
+  }
+
+  footer.bar{
+    justify-content: center;
+  }
 }
