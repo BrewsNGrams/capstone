@@ -1,0 +1,195 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700');
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v7/3IFMwfRa07i-auYR-B-zNegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Crimson Text SemiBold'), local('CrimsonText-SemiBold'), url(https://fonts.gstatic.com/s/crimsontext/v7/rEy5tGc5HdXy56Xvd4f3I_Bf3Xtc57ojmY2ox2Xv8Go.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(https://fonts.gstatic.com/s/crimsontext/v7/rEy5tGc5HdXy56Xvd4f3I3NuWYKPzoeKl5tYj8yhly0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/*Universal Stylings*/
+html {
+  background-color: #1B4965;
+  box-sizing: border-box;
+  color: #F7F3E3;
+  font-size: 16px;
+  font-family: 'Crimson Text';
+}
+
+body {
+  line-height: 1.5;
+}
+
+/*Global style classes*/
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  text-transform: uppercase;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2rem 1.5rem;
+}
+
+
+
+.action-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 40%;
+}
+
+.large-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  width: 60%;
+}
+
+.large-column div:first-child {
+  width: 100%;
+  height: auto;
+}
+
+.large-graphic :only-child {
+  width: 100%;
+  height: auto;
+}
+
+.small-column {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 40%;
+}
+
+.info-box {
+  border: 1px solid white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-box img:first-child {
+  width: 35%;
+  height: auto;
+  margin: .5rem;
+}
+
+.main-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.figure-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.figure-box figure {
+  background-color: #CAE9FF;
+  border-radius: .4rem;
+  color: #191516;
+  margin: 1rem 2rem;
+  width: 25%;
+}
+
+.figure-box img {
+  width: 100%;
+}
+
+/*tag styles*/
+
+header {
+  background-color: #88D18A;
+  border-radius: 1.5rem;
+  font-size: 1.4rem;
+  padding: 1.5rem .5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding: .5rem 0;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.4rem;
+}
+span {
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  margin: 0 1rem;
+}
+p {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+button {
+  box-shadow: 1rem;
+  padding: .5rem 2rem;
+  text-align: center;
+  width: 55%;
+}
+
+q {
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+}
+
+small {
+  font-size: 1rem;
+  padding: .5rem 0;
+}
+
+figcaption {
+  margin: .7rem;
+}
+
+/*style fixes*/
+.info-box a {
+  margin-left: 0
+}
+
+/* mobile shroud*/
+.mobile {
+  display: none;
+}
