@@ -95,6 +95,8 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: .5rem 0;
+  transition: box-shadow 500ms ease-out 200ms;
 }
 
 .info-box img:first-child {
@@ -125,7 +127,6 @@ body {
 .figure-box figure {
   background-color: #CAE9FF;
   border-radius: .4rem;
-  box-shadow: .7rem .7rem .7rem #191516;
   color: #191516;
   margin: 1rem 2rem;
   width: 25%;
@@ -201,6 +202,12 @@ figcaption {
 
 footer {
   margin: 2rem 1.5rem;
+}
+
+/*transition styles*/
+
+.info-box:hover {
+  box-shadow: .7rem .7rem .7rem #191516;
 }
 
 /*style fixes & specifics*/
