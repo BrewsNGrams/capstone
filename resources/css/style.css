@@ -96,7 +96,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin: .5rem 0;
-  transition: box-shadow 500ms ease-out 200ms;
+  transition: box-shadow 500ms ease-out 100ms;
 }
 
 .info-box img:first-child {
@@ -126,9 +126,11 @@ body {
 
 .figure-box figure {
   background-color: #CAE9FF;
+  border: 5px solid #2B2D42;
   border-radius: .4rem;
   color: #191516;
   margin: 1rem 2rem;
+  transition: border 200ms ease-in;
   width: 25%;
 }
 
@@ -173,6 +175,7 @@ a {
   color: inherit;
   text-decoration: none;
   margin: 0 1rem;
+  transition: text-decoration 150ms linear;
 }
 p {
   font-size: 1.2rem;
@@ -183,6 +186,7 @@ button {
   box-shadow: .5rem .5rem 1rem;
   padding: .5rem 2rem;
   text-align: center;
+  transition: background-color 150ms linear;
   width: 55%;
 }
 
@@ -210,6 +214,18 @@ footer {
   box-shadow: .7rem .7rem .7rem #191516;
 }
 
+.figure-box figure:hover {
+  border: 5px solid aquamarine;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button:hover {
+  background-color: darkslategray;
+}
+
 /*style fixes & specifics*/
 .info-box a {
   margin-left: 0
@@ -222,4 +238,13 @@ footer a{
 /* mobile shroud*/
 .mobile {
   display: none;
+}
+
+/*media queries*/
+
+/*mobile queries*/
+@media only screen and(max-width: 850px){
+  .desktop {
+    display: none;
+  }
 }
