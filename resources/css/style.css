@@ -284,6 +284,7 @@ footer a{
 
   .small-column {
     max-width: 100%;
+    max-height: 100%;
   }
 
   button {
@@ -292,5 +293,13 @@ footer a{
 
   .main-column {
     margin-bottom: 1.5rem;
+  }
+
+  small {
+    font-size: 1rem;
+  }
+
+  section {
+    border: none;
   }
 }
