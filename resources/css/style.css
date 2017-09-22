@@ -274,6 +274,10 @@ footer a{
     width: 100%;
   }
 
+  .banner {
+    margin-left: .5rem;
+  }
+
   .action-box {
     max-width: 100%;
   }
