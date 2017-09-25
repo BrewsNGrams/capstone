@@ -132,6 +132,11 @@ body {
 .figure-box img {
   width: 100%;
 }
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /*tag styles*/
 header {
   background-color: #C6DBF0;
@@ -187,6 +192,8 @@ figcaption {
   margin: .7rem;
 }
 footer {
+  display: flex;
+  flex-direction: column;
   margin: 2rem 1.5rem;
 }
 /*transition styles*/
@@ -228,8 +235,15 @@ footer {
   position: relative;
   top: 4.2rem;
 }
+footer .bar {
+  width: inherit;
+}
 footer a{
   font-size: 1.2rem;
+}
+.social-media h4 {
+  text-align: center;
+  width: 97%;
 }
 /* mobile shroud*/
 .mobile {
