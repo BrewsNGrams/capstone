@@ -61,7 +61,7 @@ body {
 }
 .button {
   background-color: #AED1E6;
-  box-shadow: .5rem .5rem 1rem black;
+  box-shadow: .125rem .125rem .250rem #191516;
   font-weight: bold;
   margin-left: 0;
   padding: .5rem 2rem;
@@ -81,12 +81,11 @@ body {
   height: auto;
 }
 .large-graphic :only-child {
-  box-shadow: 1rem 1rem 1rem #191516;
+  box-shadow: .125rem .125rem .250rem #191516;
   width: 100%;
   height: auto;
 }
 .small-column {
-  border-left: 1px solid #B8B991;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -132,10 +131,8 @@ body {
 .figure-box img {
   width: 100%;
 }
-.social-media {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.fa {
+  transition: color 550ms ease-in 200ms;
 }
 /*tag styles*/
 header {
@@ -146,7 +143,7 @@ header {
   padding: 1.1rem .5rem;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 99.5%;
   z-index: 1;
 }
 body section:nth-of-type(2n) {
@@ -211,6 +208,10 @@ footer {
 a:hover {
   text-decoration: underline;
 }
+.fa:hover {
+  color: #282A2E;
+  text-decoration: none;
+}
 .button:hover {
   background-color: #394042;
   color: #AED1E6;
@@ -238,14 +239,13 @@ footer {
 footer .bar {
   width: inherit;
 }
-footer a{
+footer a {
   font-size: 1.2rem;
 }
-.social-media h4 {
-  text-align: center;
-  width: 97%;
-}
 /* mobile shroud*/
+.tablet {
+  display: none;
+}
 .mobile {
   display: none;
 }
@@ -253,7 +253,7 @@ footer a{
 media queries
 mobile queries
 */
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 800px){
   .desktop {
     display: none;
   }
@@ -307,6 +307,12 @@ Note: Felt the site really didn't break much save for the
 quries here
 */
 @media only screen and (max-width: 1024px) {
+  .tablet {
+    display: flex;
+  }
+  .social-media .desktop {
+    display: none;
+  }
   .action-box p {
     padding-bottom: .5rem;
   }
